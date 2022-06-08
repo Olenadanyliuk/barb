@@ -148,6 +148,7 @@ background-color: transparent;}
 .hero {padding-top: 144px;
     padding-bottom: 206px;
 background-image: url(../images/slider/Slider3.jpg);
+background-position: left 155px;
 background-repeat: no-repeat;
 background-size: 1125px 680px;
 
