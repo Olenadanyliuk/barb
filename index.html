@@ -34,7 +34,7 @@
 <header class="header">
     <div class="container header-container">
     <a class="logo-link" href="./index.html" target="_blank" rel="noopener noreferrer"></a>
-        <svg width="69" height="56">
+        <svg class="logo-icon" width="69" height="56">
             <use href="./images/image.svg#icon-Logo">
 
             </use>
@@ -43,7 +43,7 @@
     
 <nav class="navigation">
 <ul class="nav-list">
-<li class="nav-item"><a class="nav-link" href="#" target="_blank"> О нас</a> </li>
+<li class="nav-item"><a class="nav-link current" href="#" target="_blank"> О нас</a> </li>
 <li class="nav-item"><a class="nav-link" href="#prices">Услуги и цены</a></li>
 <li class="nav-item"><a class="nav-link" href="#masters">Мастера</a></li>
 <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
@@ -76,6 +76,13 @@
 <p class="hero-subtitle" lang="en">We are experts in trendy men's haircuts. <br>
 We work quickly, carefully, and tastefully.</p>
 </div>
+
+
+<ul class="pagination-list">
+<li class="pagination_item active"></li>
+<li class="pagination_item"></li>
+<li class="pagination_item"></li>
+</ul>
 
 
 <ul class="list-button">
@@ -142,31 +149,31 @@ We work quickly, carefully, and tastefully.</p>
 <section class="benefits">
  <div class="container benefits-container">
 <ul class="benefits-list">
-    <div class="benefits-group">
+   
 <li class="benefits-item" >
-<p class="benefits-amount">600 <sup>+</sup></p>
+<p class="benefits-amount">600 <sup class="plus">+</sup></p>
 <p class="benefits-text" >Довольных клиентов в день</p>
 </li>
 
 <li>
-    <p class="benefits-amount">20 <sup>+</sup></p>
+    <p class="benefits-amount">20 <sup class="plus">+</sup></p>
     <p class="benefits-text" >Лучших мастеров Киева </p>
 </li>
-</div>
 
-<div class="benefits-group">
+
+
 <li>
-<p class="benefits-amount">50 <sup>+</sup></p>
+<p class="benefits-amount">50 <sup class="plus">+</sup></p>
 <p class="benefits-text" >Наград за отличный сервис </p>
-</li>
+
 
 
 
 <li>
-    <p class="benefits-amount">100 <sup>+</sup></p>
+    <p class="benefits-amount">100 <sup class="plus">+</sup></p>
     <p class="benefits-text" >Подарков постоянным клиентам</p>
 </li>
-</div>
+
 </ul>
 <div class="benefits-title-group">
 <p class="benefits-uppertitle">старая традиционная школа</p>
@@ -174,6 +181,7 @@ We work quickly, carefully, and tastefully.</p>
 <p class="benefits-subtitle">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
 </div>
 </div>
+
 </section>
 
 
@@ -304,10 +312,10 @@ We work quickly, carefully, and tastefully.</p>
     <h2 class="hidden-title">Портфолио</h2>
 <p class="portfolio-subtitle">На латинском языке “барба” означает “борода”</p>
 <ul class="portfolio-list">
-<li class="portfolio-item"> <img src="./images/portfolio/Rectangle 25.jpg" alt="стрижка" width="270"></li>
-<li class="portfolio-item"> <img src="./images/portfolio/Rectangle 26.jpg" alt="бритье" width="270"></li>
-<li class="portfolio-item"> <img src="./images/portfolio/Rectangle 27.jpg" alt="бритье опасной бритвой" width="270"></li>
-<li class="portfolio-item"> <img src="./images/portfolio/Rectangle 28.jpg" alt="бритье шеи" width="270"></li>
+<li class="portfolio-item" data-sale="знижка 20%"> <img src="./images/portfolio/Rectangle 25.jpg" alt="стрижка" width="270"></li>
+<li class="portfolio-item" data-sale="знижка 15%"> <img src="./images/portfolio/Rectangle 26.jpg" alt="бритье" width="270"></li>
+<li class="portfolio-item" data-sale="знижка 10%"> <img src="./images/portfolio/Rectangle 27.jpg" alt="бритье опасной бритвой" width="270"></li>
+<li class="portfolio-item" data-sale="знижка 5%"> <img src="./images/portfolio/Rectangle 28.jpg" alt="бритье шеи" width="270"></li>
 </ul>
      </div>
 </section>
@@ -399,6 +407,24 @@ We work quickly, carefully, and tastefully.</p>
 
 </div>
 </footer>
+
+<button type="button" class="scroll-button">
+    <svg class="arrow" width="40" height="40">
+        <use href="./images/image.svg#Layer_1">
+
+        </use>
+    </svg>
+
+</button>
+
+
+
+</div>
+
+
+
+
+
 
 
 </body>
