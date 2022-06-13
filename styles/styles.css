@@ -405,7 +405,7 @@ margin-bottom: 40px;
     margin-right: auto;
     max-width: 1280px;
     background-color: var(--bckgr-dark);
-    background-image: url(../images/prices.jpg);
+    background-image: url(../images/bg-price.png);
     background-repeat: no-repeat;
     background-size: 1280px 718px;
     max-width: 1280px;
@@ -449,12 +449,19 @@ margin-bottom: 44px;
 justify-content: center;
 margin-bottom: 50px;}
 
+.prices-item {
+    flex-basis: calc(100%/2);
+}
+
+
 .inner-list {display: block;
     padding: 30px 40px;}
 
 
 
-.inner-item {
+.inner-item {display: flex ;
+    justify-content: space-between;
+    align-items: baseline;
 font-size: 18px;
 line-height: 1.67;
 color: var(--grey-text);
@@ -462,6 +469,23 @@ color: var(--grey-text);
 
 
 .inner-item:not(:last-child) {margin-bottom: 20px;}
+
+.inner-item {display:flex;
+    align-items: baseline;
+}
+
+.inner-item::after {display: block;
+content: "";
+height: 1px;
+flex-grow: 1;
+background-color: rgba(157, 164, 189, 0.12);
+margin-left: 6px;
+margin-right: 6px;
+order: 1;
+
+}
+
+.inner-text {order: 2;}
 
 
 .prices-button {
@@ -478,6 +502,9 @@ color: var(--grey-text);
             border-radius: 25px;
             cursor: pointer;
             padding: 12px 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
                 /*BENEFITS*/
@@ -755,7 +782,7 @@ color: rgba(157, 164, 189, 0.4);}
         line-height: 1.33;
         letter-spacing: 0.09em;
         text-transform: uppercase;
-        min-width: 160px;
+        width: 160px;
         border: 1px solid #FF6C00;
         border-radius: 25px;
         cursor: pointer;
