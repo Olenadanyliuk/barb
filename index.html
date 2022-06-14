@@ -338,16 +338,19 @@ We work quickly, carefully, and tastefully.</p>
 <form class="form">
     <h3 class="order-title" >Онлайн-запись</h3>
     <div class="form-group">
-<label class="label-text">Имя*
-    <input type="text" name="name" />
+<label class="label-text label-text-name">
+    <span class="form-label">Имя*</span>
+    <input type="text" name="name" class="user-name" />
 </label>
 
-<label class="label-text">Телефон*
-<input type="tel" name="tel" />
+<label class="label-text label-text-phone">
+    <span class="form-label" >Телефон*</span>
+<input type="tel" name="tel" class="user-phone" />
 </label>
 </div>
 
-<label class="label-text">сообщение
+<label class="label-comment">
+    <span class="form-label comment">сообщение</span>
     <textarea name="message" ></textarea>
 </label>
 
@@ -360,20 +363,20 @@ We work quickly, carefully, and tastefully.</p>
 <h3 class="contacts-title">Контакты</h3>
 <address id="contacts" class="contact">
     <ul class="contacts-list">
-        <li class="contacts-item">
+        <li class="contacts-item street">
             <svg class="map-icon" width="24" height="24">
                 <use href="./images/image.svg#icon-map-pin">
 
                 </use>
             </svg>
-            
-            ул. Васильковая, 7А  Киев, 08132</li>
+            <span class="span-street">
+            ул. Васильковая, 7А <br> Киев, 08132</span></li>
 
 
 
         <li class="contacts-item">
             <a class="contacts-link" href="tel:+380441111111"> 
-                <svg class="map-icon" width="24" height="24">
+                <svg class="phone-icon" width="24" height="24">
                     <use href="./images/image.svg#icon-phone">
                 </use>
             </svg>
@@ -382,7 +385,7 @@ We work quickly, carefully, and tastefully.</p>
 
         <li class="contacts-item">
 <a class="contacts-link" href="mailto:barbershop@email.com" >
-    <svg class="map-icon" width="24" height="24">
+    <svg class="mail-icon" width="24" height="24">
         <use href="./images/image.svg#icon-mail">
     </use>
 </svg>
